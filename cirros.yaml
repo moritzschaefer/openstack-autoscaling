@@ -1,0 +1,26 @@
+heat_template_version: 2014-10-16  
+description: A simple server.  
+resources:  
+  server:
+    type: OS::Nova::Server
+    properties:
+      key_name: OpenStackVM1
+      block_device_mapping:
+        - device_name: vda
+          delete_on_termination: true
+          volume_id: { get_resource: volume }
+      flavor: m1.nano
+      metadata: {"metering.stack": {get_param: "OS::stack_id"}}
+
+      networks:
+        - network: internal001
+      user_data_format: RAW
+      user_data: |
+        #!/bin/sh
+        while [ 1 ] ; do echo $((13**99)) 1>/dev/null 2>&1; done
+
+  volume:
+    type: OS::Cinder::Volume
+    properties:
+      image: 'Cirros 0.3.3'
+      size: 1
