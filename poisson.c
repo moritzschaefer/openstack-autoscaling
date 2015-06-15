@@ -3,7 +3,17 @@
 #include <gsl/gsl_randist.h>
 
 int
-main (void)
+main (int argc, char *argv[])
+{
+	if(argc != 2) {
+		fprintf(stderr, "Usage: %s <numvars>");
+		return 1;
+		}
+	print_numbers(strtol(argv[1], (char **)NULL, 10));
+	return 0;
+}
+
+void print_numbers(int n)
 {
   const gsl_rng_type * T;
   gsl_rng * r;

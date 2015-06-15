@@ -1,3 +1,3 @@
 all:
-	gcc -Wall poisson.c -lgsl -lgslcblas -lm -o poisson
+	gcc -Wall stress.c -lgsl -lgslcblas -lm -o stress
 
