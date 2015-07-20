@@ -48,5 +48,5 @@ matching_metadata: {'metadata.user_metadata.stack': {get_param: "OS::stack_id"}}
 
 - Use poisson to emulate CPU load
 
-- Fix cpu_util in ceilometer (is ~25% should be ~100%)
+- Fix cpu_util in ceilometer (is ~25% should be ~100%): https://bugs.launchpad.net/ceilometer/+bug/1421584
 - For Ceilometer Alarm add the metadata parameter to just take values related to the given stack
