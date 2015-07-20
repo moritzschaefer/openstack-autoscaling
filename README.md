@@ -50,3 +50,17 @@ matching_metadata: {'metadata.user_metadata.stack': {get_param: "OS::stack_id"}}
 
 - Fix cpu_util in ceilometer (is ~25% should be ~100%): https://bugs.launchpad.net/ceilometer/+bug/1421584
 - For Ceilometer Alarm add the metadata parameter to just take values related to the given stack
+
+# Related Work/Links
+
+## Related Work
+
+- http://arxiv.org/pdf/1403.6918.pdf
+- http://www.computer.org/csdl/proceedings/ncca/2012/4943/00/4943a137.pdf
+- http://www.academia.edu/7611895/A_Load_Balancing_Based_Cloud_Computing_Techniques_and_Challenges
+- http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6045063&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6045063
+
+## Contribution
+
+- http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6123530&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6123530
+- http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5715067&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5715067
