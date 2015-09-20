@@ -1,3 +1,8 @@
+# Dead
+
+This project died in favor of another one.
+
+
 # Scenario
 
 Autoscaling openstack instances dependent on demand
